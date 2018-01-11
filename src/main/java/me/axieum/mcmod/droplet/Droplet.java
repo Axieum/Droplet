@@ -1,5 +1,6 @@
 package me.axieum.mcmod.droplet;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -26,7 +27,8 @@ public class Droplet
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	//
+    	// Register the class to listen for liquid events
+    	MinecraftForge.EVENT_BUS.register(new EventFluidHandler());
     }
 
 }
