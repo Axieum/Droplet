@@ -19,7 +19,8 @@ public class Droplet
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-    	//
+    	// Initialise and load the config
+    	Config.load(event.getSuggestedConfigurationFile());
     }
 
     @EventHandler
