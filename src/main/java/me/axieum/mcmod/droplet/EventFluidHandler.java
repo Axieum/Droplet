@@ -28,7 +28,7 @@ public class EventFluidHandler
 				}
 				else
 				{
-					 // If the liquid is in whitelisting mode
+					// If the liquid is in whitelisting mode
 					e.setResult(liquid.getBiomes().contains(biome) ? Result.ALLOW : Result.DENY);
 				}
 			}
